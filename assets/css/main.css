@@ -1387,6 +1387,29 @@ h2 {
 .resume .link-icon:hover {
   color: #3b5fb1
 }
+
+/* Add a hover effect to the carousel images */
+.cert-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Make carousel controls more prominent on hover */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a background color */
+  border-radius: 50%; /* Round the control icons */
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
