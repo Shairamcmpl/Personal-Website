@@ -1546,6 +1546,65 @@ h2 {
   margin-right: 10px; /* Adjust spacing as needed */
 }
 
+.description_portfolio{
+  font-family:  sans-serif;
+}
+
+.tech_stack{
+  font-family: Arial;
+  font-weight: bolder;
+}
+
+.tech_stack h5{
+  font-size: 18px; /* Resize the text */
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.tech-item {
+  position: relative;
+}
+
+.tech-icon {
+  width: 70px;
+  height: 63px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-link:hover .tech-icon {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.tech-icon-link:focus .tech-icon,
+.tech-icon-link:active .tech-icon {
+  transform: scale(1.5); /* Further zoom on click */
+}
+
+/* Tooltip-like effect for tech name */
+.tech-icon-link::after {
+  content: attr(title); /* Display the tech name from the 'title' attribute */
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tech-icon-link:hover::after {
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Services Section
@@ -2054,7 +2113,7 @@ section {
   background-size: 112% auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 130vh; /* Full height */
+  height: 145vh; /* Full height */
   width: 100%; /* Full width */
 }
 
